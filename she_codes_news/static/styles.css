@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
 
 body {
-    background-color: rgb(240, 239, 239);
+    background-color: lightblue;
+    color: black;
 }
 
 header {
@@ -9,17 +10,16 @@ header {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #000;
+    color: black;
 }
 
-img {
-    filter: grayscale(100%);
-}
 
 h1 {
     font-family: 'Montserrat Subrayada', sans-serif;
     text-decoration: none;
     font-size: 4rem;
     margin: 0;
+    color: lightcoral;
 }
 
 h2 {
@@ -52,3 +52,86 @@ a {
 a, p {
     font-family: monospace;
 }
+
+#newstoryform, #loginform {
+    position: relative;
+    align-items: flex;
+    width: 600px;
+    height: 800px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+label, input, button {
+    display: block;
+    width: 200px;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    display: block;
+    width: 300px;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  }
+
+  label {
+    margin-bottom: 4px;
+  }
+  
+  label:nth-of-type(2) {
+    margin-top: 12px;
+  }
+  
+  input::placeholder {
+    color: gray;
+  }
+  
+  input {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  }
+  
+  textarea {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 300px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  }
+
+  button {
+    color: white;
+    margin-top: 20px;
+    background: #1DA1F2;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+  }
+  
+  button:hover {
+    box-shadow: none;
+  }
+
+  
+  #user {
+    width: 150px;
+    height: 150px;
+  }

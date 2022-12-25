@@ -1,0 +1,11 @@
+<div class="author-card">
+    {% if author.image %}
+    <a href="{% url 'users:profile' author.id %}"><img src="{{ story.image }}"></a>
+        {% else %}
+            <img src="{{ story.image }}">
+        {% endif %}
+        <div class="author-card-text">
+            <h4><a href="{% url 'users:profile' author.id %}"><span>{ {{ author.username }} }<span></h4>
+        </div>
+    </a>
+</div>

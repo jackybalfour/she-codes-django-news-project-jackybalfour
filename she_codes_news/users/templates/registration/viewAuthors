@@ -1,0 +1,23 @@
+{% extends "base.html" %} 
+{% load static %} 
+
+{% block content %}
+
+<div class="auth-title-div">
+    <h1 id="view-auth-title">View <span>{ Authors }</span></h2>
+</div>
+
+<div class="view-authors-container">
+        <div id="all-authors">
+            <!-- Use author card template -->
+            {% if authors %} 
+                {% for author in authors %} 
+                {% include "./authorCard.html" with authors=author %} 
+            {% endfor %} 
+                {% else %}
+            <p>No Authors are Available to View 😔</p>
+            {% endif %}
+        </div>
+</div>
+
+{% endblock %}
